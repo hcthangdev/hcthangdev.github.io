@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="test/dist/logo.png" />
+    <img src="assets/logo.png" />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
