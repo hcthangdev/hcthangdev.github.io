@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/test/logo.png">
+    <img src="./assets/logo.png" attr-okok="okok" />
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
