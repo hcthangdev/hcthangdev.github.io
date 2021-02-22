@@ -46,9 +46,23 @@ nav.navbar.navbar-light {
 .banner .banner--content{
     position: absolute;
     left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+}
+@media (min-width: 768px){
+    .banner .banner--content{
+        top: calc(50% + 45px);
+    }
+}
+@media (min-width: 342px) and (max-width: 767px){
+    .banner .banner--content{
+        top: calc(50% + 75.375px);
+    }
+}
+@media (max-width: 341px){
+    .banner .banner--content{
+        top: calc(50% + 90.565px);
+    }
 }
 .banner .banner--content img{
     border-radius: 50%;
@@ -56,4 +70,17 @@ nav.navbar.navbar-light {
 .banner .banner--content h2{
     color: #fff;
     text-transform: uppercase;
+}
+.banner .banner--content p{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    color: #101010;
+}
+.banner .banner--content .btn.nuthire{
+    width: 180px;
+    background: #101010;
+    color: #fff;
+    border-color: #101010;
+    border-radius: 0;
 }
