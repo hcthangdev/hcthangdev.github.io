@@ -1,0 +1,55 @@
+*{margin: 0; padding: 0;}
+
+a.nav-link {
+    color: #101010;
+    font-family: segoe ui;
+    text-transform: uppercase;
+}
+
+nav.navbar.navbar-light {
+    padding: 0;
+    background: #fff;
+} 
+
+@media (max-width: 768px){
+    a.nav-link {
+        padding: .2rem 1rem;
+    }
+
+    ul.nav.navber-nav {
+        justify-content: center;
+    }
+
+    a.navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.banner{
+    height: 100vh;
+    background: #e9585f;
+    position: relative;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background: #e4555b;
+}
+.banner .banner--content{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.banner .banner--content img{
+    border-radius: 50%;
+}
+.banner .banner--content h2{
+    color: #fff;
+    text-transform: uppercase;
+}
