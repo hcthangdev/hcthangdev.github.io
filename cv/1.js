@@ -1,4 +1,7 @@
 ﻿ $(function(){
-    console.log(1);
+    $('.computer-mouse, .to-exp').click(() =>{
+        $('body, html').animate({scrollTop: $('#experience-and-lerning-progress').offset().top}, 800);
+        return false
+    })
 })  
  

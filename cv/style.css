@@ -1,8 +1,16 @@
 *{margin: 0; padding: 0;}
 
+@font-face {
+    font-family: QM;
+    src: url('fonts/QUICKSAND-MEDIUM.TTF');
+}
+
+body{
+    font-family: QM;
+}
+
 a.nav-link {
     color: #101010;
-    font-family: segoe ui;
     text-transform: uppercase;
 }
 
@@ -83,6 +91,32 @@ nav.navbar.navbar-light {
     color: #fff;
     border-color: #101010;
     border-radius: 0;
+}
+.computer-mouse{
+    position: absolute;
+    width: 40px;
+    height: 77px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    left: 50%;
+    bottom: 3%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: .4s;
+}
+.computer-mouse:hover{
+    bottom: 3.5%;
+    box-shadow: 0px 2px 3px -1px #000;
+}
+.computer-mouse::after{
+    position: absolute;
+    content: '';
+    width: 2px;
+    height: 10px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
 }
 
 .exp-title{
