@@ -1,0 +1,135 @@
+*{margin: 0; padding: 0;}
+
+a.nav-link {
+    color: #101010;
+    font-family: segoe ui;
+    text-transform: uppercase;
+}
+
+nav.navbar.navbar-light {
+    padding: 0;
+    background: #fff;
+} 
+
+@media (min-width: 768px){
+    nav.navbar.navbar-light {
+        height: 90px;
+    }
+}
+@media (max-width: 768px){
+    a.nav-link {
+        padding: .2rem 1rem;
+    }
+
+    ul.nav.navber-nav {
+        justify-content: center;
+    }
+
+    a.navbar-brand {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.banner{
+    height: 100vh;
+    background: #e9585f;
+    position: relative;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background: #e4555b;
+}
+.banner .banner--content{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+@media (min-width: 768px){
+    .banner .banner--content{
+        top: calc(50% + 45px);
+    }
+}
+@media (min-width: 342px) and (max-width: 767px){
+    .banner .banner--content{
+        top: calc(50% + 75.375px);
+    }
+}
+@media (max-width: 341px){
+    .banner .banner--content{
+        top: calc(50% + 90.565px);
+    }
+}
+.banner .banner--content img{
+    border-radius: 50%;
+}
+.banner .banner--content h2{
+    color: #fff;
+    text-transform: uppercase;
+}
+.banner .banner--content p{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    color: #101010;
+}
+.banner .banner--content .btn.nuthire{
+    width: 180px;
+    background: #101010;
+    color: #fff;
+    border-color: #101010;
+    border-radius: 0;
+}
+
+.exp-title{
+    margin-top: 120px;
+    margin-bottom: 60px;
+}
+.exp-title span{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.exp-title span::before, .exp-title span::after{
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 2px;
+    background: #e4555b;
+}
+.exp-title span::before{
+    top: 100%;
+}
+.exp-title span::after{
+    top: 110%;
+    left: 10px;
+}
+
+.exp-col-title{
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.exp-detail{
+    margin-bottom: 50px;
+}
+.exp-detail--title{
+    color: #e4555b;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.exp-detail--description{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+.exp-detail--content{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
