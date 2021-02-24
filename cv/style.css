@@ -134,7 +134,7 @@ nav.navbar.navbar-light {
     border: 1px solid #fff;
     border-radius: 30px;
     left: 50%;
-    bottom: 4%;
+    bottom: 6%;
     transform: translateX(-50%);
     cursor: pointer;
     transition: .4s;
@@ -244,6 +244,13 @@ nav.navbar.navbar-light {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+@media (max-width: 830px) {
+    .exp-detail--content+.modal .modal-dialog {
+        max-width: calc(100vw - 30px);
+        margin: 0 !important;
+    }
 }
 
 .exp-detail--content+.modal .modal-dialog .modal-header {
