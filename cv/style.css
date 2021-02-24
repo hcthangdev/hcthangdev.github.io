@@ -244,3 +244,7 @@ nav.navbar.navbar-light {
 .contact-item>a {
     color: #fff;
 }
+
+#comments {
+    padding-bottom: 4rem;
+}
