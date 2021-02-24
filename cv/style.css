@@ -252,7 +252,7 @@ nav.navbar.navbar-light {
         margin: 0 !important;
     }
     .exp-detail--content+.modal .modal-dialog img {
-        max-height: 200px;
+        max-height: 200px !important;
     }
 }
 
