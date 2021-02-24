@@ -89,15 +89,9 @@ nav.navbar.navbar-light {
     }
 }
 
-@media (min-width: 342px) and (max-width: 767px) {
+@media (max-width: 767px) {
     .banner .banner--content {
-        top: calc(50% + 75.375px);
-    }
-}
-
-@media (max-width: 341px) {
-    .banner .banner--content {
-        top: calc(50% + 68.465px);
+        top: 50%;
     }
 }
 
