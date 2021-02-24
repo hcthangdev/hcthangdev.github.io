@@ -225,6 +225,55 @@ nav.navbar.navbar-light {
     line-height: 1.6rem;
 }
 
+.exp-detail--content a {
+    display: block;
+}
+
+.exp-detail--content img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.exp-detail--content+.modal {
+    padding: 0 !important;
+}
+
+.exp-detail--content+.modal .modal-dialog {
+    max-width: 800px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.exp-detail--content+.modal .modal-dialog .modal-header {
+    height: 0;
+    padding: 0 !important;
+    position: relative;
+    border: none;
+}
+
+.exp-detail--content+.modal .modal-dialog .modal-header button.close {
+    position: absolute;
+    background: #fff;
+    right: 15px;
+    top: 15px;
+    padding: 3px 10px;
+    display: none;
+}
+
+.exp-detail--content+.modal .modal-dialog .modal-content {
+    border: none;
+}
+
+.exp-detail--content+.modal .modal-dialog .modal-content:hover .modal-header button.close {
+    display: block;
+}
+
+.modal-backdrop.in {
+    opacity: .6;
+}
+
 #contact {
     padding-bottom: 50px;
     color: #fff;
