@@ -136,7 +136,7 @@ nav.navbar.navbar-light {
 
 @media (max-width: 767px) {
     .computer-mouse {
-        bottom: 10%;
+        bottom: 10% !important;
     }
 }
 
