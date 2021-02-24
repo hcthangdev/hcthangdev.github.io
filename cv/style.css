@@ -1,11 +1,18 @@
-*{margin: 0; padding: 0;}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 15px;
+}
 
 @font-face {
     font-family: QM;
     src: url('fonts/QUICKSAND-MEDIUM.TTF');
 }
 
-body{
+body {
     font-family: QM;
 }
 
@@ -17,82 +24,108 @@ a.nav-link {
 nav.navbar.navbar-light {
     padding: 0;
     background: #fff;
-} 
+}
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
     nav.navbar.navbar-light {
         height: 90px;
     }
 }
-@media (max-width: 768px){
+
+@media (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
     a.nav-link {
         padding: .2rem 1rem;
     }
-
     ul.nav.navber-nav {
         justify-content: center;
     }
-
     a.navbar-brand {
         width: 100%;
         text-align: center;
     }
 }
 
-.banner{
-    height: 100vh;
+.double-background {
     background: #e9585f;
     position: relative;
 }
-.banner::before{
+
+.double-background::before {
     position: absolute;
     content: '';
     height: 100%;
     width: 50%;
     background: #e4555b;
 }
-.banner .banner--content{
+
+.banner {
+    height: 100vh;
+    /* background: #e9585f; */
+    /* position: relative; */
+}
+
+
+/* .banner::before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background: #e4555b;
+} */
+
+.banner .banner--content {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
-@media (min-width: 768px){
-    .banner .banner--content{
+
+@media (min-width: 768px) {
+    .banner .banner--content {
         top: calc(50% + 45px);
     }
 }
-@media (min-width: 342px) and (max-width: 767px){
-    .banner .banner--content{
+
+@media (min-width: 342px) and (max-width: 767px) {
+    .banner .banner--content {
         top: calc(50% + 75.375px);
     }
 }
-@media (max-width: 341px){
-    .banner .banner--content{
-        top: calc(50% + 90.565px);
+
+@media (max-width: 341px) {
+    .banner .banner--content {
+        top: calc(50% + 68.465px);
     }
 }
-.banner .banner--content img{
+
+.banner .banner--content img {
     border-radius: 50%;
 }
-.banner .banner--content h2{
+
+.banner .banner--content h2 {
     color: #fff;
     text-transform: uppercase;
 }
-.banner .banner--content p{
+
+.banner .banner--content p {
     width: 50%;
     margin: auto;
     margin-bottom: 1.5rem;
     color: #101010;
 }
-.banner .banner--content .btn.nuthire{
+
+.banner .banner--content .btn.nuthire {
     width: 180px;
     background: #101010;
     color: #fff;
     border-color: #101010;
     border-radius: 0;
 }
-.computer-mouse{
+
+.computer-mouse {
     position: absolute;
     width: 40px;
     height: 77px;
@@ -104,11 +137,13 @@ nav.navbar.navbar-light {
     cursor: pointer;
     transition: .4s;
 }
-.computer-mouse:hover{
+
+.computer-mouse:hover {
     bottom: 3.5%;
     box-shadow: 0px 2px 3px -1px #000;
 }
-.computer-mouse::after{
+
+.computer-mouse::after {
     position: absolute;
     content: '';
     width: 2px;
@@ -119,53 +154,93 @@ nav.navbar.navbar-light {
     background: #fff;
 }
 
-.title-main-block{
+.title-main-block {
     margin-top: 120px;
     margin-bottom: 60px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.exp-title span{
+@media (max-width: 576px) {
+    .col-sm-6.border-left.border-dark.mb-5.exp-col {
+        border: 0 !important;
+    }
+}
+
+.exp-title span {
     font-size: 2.5rem;
     text-transform: uppercase;
     position: relative;
 }
-.exp-title span::before, .exp-title span::after{
+
+.exp-title span::before,
+.exp-title span::after {
     position: absolute;
     content: '';
     width: 100px;
     height: 2px;
     background: #e4555b;
 }
-.exp-title span::before{
+
+.exp-title span::before {
     top: 100%;
 }
-.exp-title span::after{
+
+.exp-title span::after {
     top: 110%;
     left: 10px;
 }
-.exp-col-title{
+
+.exp-col {
+    margin-bottom: 30px;
+}
+
+.exp-col-title {
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.5rem;
     margin-bottom: 40px;
 }
 
-.exp-detail:not(:last-child){
+.exp-detail:not(:last-child) {
     margin-bottom: 50px;
 }
-.exp-detail--title{
+
+.exp-detail--title {
     color: #e4555b;
     font-size: 1.2rem;
     margin-bottom: 20px;
 }
-.exp-detail--description{
+
+.exp-detail--description {
     font-size: 1.1rem;
     margin-bottom: 10px;
     display: block;
 }
-.exp-detail--content{
+
+.exp-detail--content {
     font-size: 1rem;
     line-height: 1.6rem;
+}
+
+#contact {
+    padding-bottom: 50px;
+    color: #fff;
+}
+
+#contact .my-name {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin-bottom: .8rem;
+}
+
+.contact-item>i {
+    width: 25px;
+    text-align: center;
+}
+
+.contact-item>a {
+    color: #fff;
 }
