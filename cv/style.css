@@ -251,6 +251,9 @@ nav.navbar.navbar-light {
         max-width: calc(100vw - 30px);
         margin: 0 !important;
     }
+    .exp-detail--content+.modal .modal-dialog img {
+        max-height: 200px;
+    }
 }
 
 .exp-detail--content+.modal .modal-dialog .modal-header {
