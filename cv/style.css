@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+#comments {
+    padding-bottom: 4rem;
+}
+
 html {
     font-size: 15px;
 }
@@ -243,8 +247,4 @@ nav.navbar.navbar-light {
 
 .contact-item>a {
     color: #fff;
-}
-
-#comments {
-    padding-bottom: 4rem;
 }
