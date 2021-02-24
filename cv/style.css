@@ -134,7 +134,7 @@ nav.navbar.navbar-light {
     border: 1px solid #fff;
     border-radius: 30px;
     left: 50%;
-    bottom: 3%;
+    bottom: 4%;
     transform: translateX(-50%);
     cursor: pointer;
     transition: .4s;
