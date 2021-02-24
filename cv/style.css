@@ -44,6 +44,7 @@ nav.navbar.navbar-light {
         padding: .2rem 1rem;
     }
     ul.nav.navber-nav {
+        width: 100%;
         justify-content: center;
     }
     a.navbar-brand {
@@ -67,18 +68,7 @@ nav.navbar.navbar-light {
 
 .banner {
     height: 100vh;
-    /* background: #e9585f; */
-    /* position: relative; */
 }
-
-
-/* .banner::before{
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 50%;
-    background: #e4555b;
-} */
 
 .banner .banner--content {
     position: absolute;
