@@ -134,6 +134,12 @@ nav.navbar.navbar-light {
     transition: .4s;
 }
 
+@media (max-width: 767px) {
+    .computer-mouse {
+        bottom: 10%;
+    }
+}
+
 .computer-mouse:hover {
     bottom: 3.5%;
     box-shadow: 0px 2px 3px -1px #000;
