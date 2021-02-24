@@ -77,6 +77,12 @@ nav.navbar.navbar-light {
     z-index: 1;
 }
 
+@media (max-width: 767px) {
+    .banner .banner--content img {
+        width: 100px !important;
+    }
+}
+
 @media (min-width: 768px) {
     .banner .banner--content {
         top: calc(50% + 45px);
@@ -96,7 +102,9 @@ nav.navbar.navbar-light {
 }
 
 .banner .banner--content img {
+    width: 200px;
     border-radius: 50%;
+    margin-bottom: 2rem;
 }
 
 .banner .banner--content h2 {
