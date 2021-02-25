@@ -30,7 +30,7 @@ nav.navbar.navbar-light {
     background: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     nav.navbar.navbar-light {
         height: 90px;
     }
@@ -136,12 +136,12 @@ nav.navbar.navbar-light {
 
 @media (max-width: 767px) {
     .computer-mouse {
-        bottom: 13% !important;
+        bottom: 16% !important;
     }
 }
 
 .computer-mouse:hover {
-    bottom: 3.5%;
+    transform: translate(-50%, -1px);
     box-shadow: 0px 2px 3px -1px #000;
 }
 
